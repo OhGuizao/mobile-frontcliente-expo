@@ -4,7 +4,8 @@ export const style = StyleSheet.create({
     container: {
         flex: 1,
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        backgroundColor: '#001219'
     },
     imglogo: {
         width: 100,
@@ -12,47 +13,71 @@ export const style = StyleSheet.create({
         resizeMode: 'cover'
     },
     controles: {
-        width: '%80',
+        width: '80%',
         padding: 10,
         margin: 20,
         shadowColor: '#808080',
         shadowRadius: 10,
         shadowOffset: { width: 10, height: 10 },
         shadowOpacity: 0.8,
-        backgroundColor: 'white'
+        backgroundColor: '#8ecae6',
+        borderRadius: 10,
+        alignItems: 'center',
+        justifyContent: 'center'
+
     },
     input: {
-        borderBottomColor: '#eee',
-        borderBottomWidth:1,
-        padding:5,
-        marginBottom:10,
-        fontSize:15,
-        textTransform:'lowercase'
+        borderBottomColor: '#003049',
+        borderBottomWidth: 1,
+        padding: 5,
+        marginBottom: 10,
+        fontSize: 15,
+        textTransform: 'lowercase',
+        color: 'white'
 
     },
     btnlogar: {
-        padding:30,
+        padding: 30,
+        backgroundColor: '#003049',
+        borderRadius: 10,
+        alignItems: "center",
+        justifyContent: "center",
+        width: 100,
+        height: 20,
+        color: 'white'
     },
     txtbtnlogar: {
-        textAlign:'center',
-        color:'white',
-        backgroundColor:'#808080',
-        borderRadius:10,
-        textTransform:'lowercase'
+        textAlign: 'center',
+        color: 'white',
+        borderRadius: 5,
+        textTransform: 'lowercase',
+        width: 80,
+        zIndex: 10000
 
     },
-    btncadastrar: {},
-    txtbtncadastrar: {
-        textAlign:'center',
-        color:'white',
-        backgroundColor:'#808080',
-        width:200,
-        height:50,
-        textAlignVertical:"center",
-        alignItems:'center',
-        padding:15,
-        borderRadius:10,
-        textTransform:'lowercase'
+    btncadastrar: {
+        backgroundColor: '#003049',
+        borderRadius: 10,
+        alignItems: 'center',
+        justifyContent: 'center',
+        color: 'white'
     },
+    txtbtncadastrar: {
+        textAlign: 'center',
+        color: 'white',
+        width: 150,
+        height: 30,
+        textAlignVertical: "center",
+        alignItems: 'center',
+        padding: 5,
+        borderRadius: 10,
+        textTransform: 'lowercase',
+        zIndex: 10000
+    },
+    tituloCadastro: {
+        fontSize: 30,
+        color: "white",
+
+    }
 
 })
