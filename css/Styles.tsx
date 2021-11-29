@@ -10,7 +10,8 @@ export const style = StyleSheet.create({
     imglogo: {
         width: 100,
         height: 100,
-        resizeMode: 'cover'
+        resizeMode: 'cover',
+        borderRadius: 20
     },
     controles: {
         width: '80%',
@@ -20,8 +21,8 @@ export const style = StyleSheet.create({
         shadowRadius: 10,
         shadowOffset: { width: 10, height: 10 },
         shadowOpacity: 0.8,
-        backgroundColor: '#8ecae6',
-        borderRadius: 10,
+        backgroundColor: '#003049',
+        borderRadius: 20,
         alignItems: 'center',
         justifyContent: 'center'
 
@@ -49,10 +50,15 @@ export const style = StyleSheet.create({
     txtbtnlogar: {
         textAlign: 'center',
         color: 'white',
-        borderRadius: 5,
+        width: 150,
+        height: 30,
+        textAlignVertical: "center",
+        alignItems: 'center',
+        padding: 5,
+        borderRadius: 10,
         textTransform: 'lowercase',
-        width: 80,
         zIndex: 10000
+
 
     },
     btncadastrar: {
@@ -78,6 +84,9 @@ export const style = StyleSheet.create({
         fontSize: 30,
         color: "white",
 
-    }
+    },
+    // input::placeholder:{
+    //     color:"white"
+    // }
 
 })

@@ -63,32 +63,32 @@ export default function Cadastro() {
 function efetuarCadastro() {
 
 
-//faremos um fetch, ou seja, uma busca de dados por url em js IMPORTANTE!!!!
-fetch(`${servidor}/cadastro`,{
-    method:"POST",
-    headers:{
-        accept:"aplication/json",
-        "content-type":"application/json"
-    },
-    body:JSON.stringify({
-        nome:nome,
-        email:email,
-        cpf:cpf,
-        usuario:usuario,
-        senha:senha
-    })
-}).then((response)=>response.json())
-.then((resultado)=>{
+    //faremos um fetch, ou seja, uma busca de dados por url em js IMPORTANTE!!!!
+    fetch(`${servidor}/cadastro`, {
+        method: "POST",
+        headers: {
+            accept: "aplication/json",
+            "content-type": "application/json"
+        },
+        body: JSON.stringify({
+            nome: nome,
+            email: email,
+            cpf: cpf,
+            usuario: usuario,
+            senha: senha
+        })
+    }).then((response) => response.json())
+        .then((resultado) => {
 
 
-    //para app
-    Alert.alert("O app diz...",resultado.output);
+            //para app
+            Alert.alert("O app diz...", resultado.output);
 
-    //para site
-    //#  alert(resultado.output);
-    
+            //para site
+            //#  alert(resultado.output);
 
 
-    // console.log(resultado);
-}).catch((erro)=>console.error(`Erro ao executar -> ${erro}`))
+
+            // console.log(resultado);
+        }).catch((erro) => console.error(`Erro ao executar -> ${erro}`))
 }
