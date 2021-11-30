@@ -16,11 +16,11 @@ export default function Login({ navigation }) {
         <View style={style.container}>
             <Image source={require("../assets/icon.png")} style={style.imglogo} />
             <View style={style.controles}>
-                <TextInput placeholder="Usuário" style={style.input}
+                <TextInput placeholderTextColor='#cddafd' placeholder="Usuário" style={style.input}
                     value={usuario}
                     onChangeText={(value) => setUsuario(value)} />
 
-                <TextInput placeholder="Senha" secureTextEntry style={style.input}
+                <TextInput placeholder="Senha" secureTextEntry placeholderTextColor='#cddafd' style={style.input}
                     value={senha}
                     onChangeText={(value) => setSenha(value)} />
 
@@ -41,7 +41,7 @@ export default function Login({ navigation }) {
 
                     }}
                 >
-                    <Text style={style.txtbtnlogar}>Logar</Text>
+                    <Text style={style.txtbtnlogar}>Login</Text>
                 </TouchableOpacity>
 
 
