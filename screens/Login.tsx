@@ -16,13 +16,15 @@ export default function Login({ navigation }) {
         <View style={style.container}>
             <Image source={require("../assets/icon.png")} style={style.imglogo} />
             <View style={style.controles}>
-                <TextInput placeholderTextColor='#cddafd' placeholder="Usuário" style={style.input}
+                <TextInput placeholderTextColor='white' placeholder="Usuário" style={style.input}
                     value={usuario}
                     onChangeText={(value) => setUsuario(value)} />
 
-                <TextInput placeholder="Senha" secureTextEntry placeholderTextColor='#cddafd' style={style.input}
+                <TextInput placeholderTextColor='white' placeholder="Senha" secureTextEntry  style={style.input}
                     value={senha}
                     onChangeText={(value) => setSenha(value)} />
+
+
 
 
                 <TouchableOpacity
@@ -43,14 +45,12 @@ export default function Login({ navigation }) {
                 >
                     <Text style={style.txtbtnlogar}>Login</Text>
                 </TouchableOpacity>
-
-
             </View>
             <TouchableOpacity style={style.btncadastrar} onPress={() => {
                 navigation.navigate("Cadastro")
             }}
             >
-                <Text style={style.txtbtncadastrar}>Cadastrar</Text>
+                <Text style={style.txtbtncadastrar}>Se você não possuir um login, clique aqui para cadastrar-se </Text>
             </TouchableOpacity>
         </View>
     );

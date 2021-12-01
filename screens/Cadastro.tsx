@@ -25,7 +25,7 @@ export default function Cadastro() {
     //Resposta do inicio do projeto
     return (
         <View style={style.container}>
-            <Text style={style.tituloCadastro}>Cadastro</Text>
+            <Text style={style.titulo}>Cadastro</Text>
             <View style={style.controles}>
 
                 {/* formularios no qual estão esperando uma alteração para enviar ao "Let", por coonta que estão vazios */}

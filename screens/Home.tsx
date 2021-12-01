@@ -39,7 +39,8 @@ function TelaHome({ navigation }) {
                 accept: 'application/json'
                 , 'content-type': 'application/json'
                 , 'token': rs
-            }
+                ,
+            },
         })
 
             .then((response) => response.json())
@@ -63,9 +64,9 @@ function TelaHome({ navigation }) {
                                 <Text style={style.email}>Email:{item.email}</Text>
                                 <Text style={style.usuario}>Usuario:{item.usuario}</Text>
                                 <TouchableOpacity
-                                //Navegação do botão touchableopacity ->
+                                //Navegação do botão touchableopacity, importação de arquivos via rota
                                     onPress={() => {
-                                        navigation.navigate("Atualizar",{cliente:item})
+                                        navigation.navigate("Atualizar",{cliente:item,token:rs})
                                     }}>
                                     <MaterialCommunityIcons name="account-edit" size={24} color="black" />
                                 </TouchableOpacity>
